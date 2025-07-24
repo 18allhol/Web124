@@ -1,4 +1,5 @@
-//Allyvia Holland Javascript 3
+//Allyvia Holland Javascript 3 07-15-25
+/* Based on Javascript 30 projects */
 // Populates voice dropdown with English voices and restores previous selection using localStorage
 // Updates msg.voice and previews the voice when changed
 // Toggles speech on/off based on Speak and Stop buttons
