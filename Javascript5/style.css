@@ -1,0 +1,143 @@
+/*Allyvia Holland Javascript 4 07-15-25 */
+/* Based on Javascript 30 projects */
+
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 1rem;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: #ffc600;
+  width: 0%;
+  z-index: 100;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(30, 30, 30, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  border-radius: 12px;
+}
+
+.menu {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.2s ease;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  outline: none;
+}
+
+.highlight {
+  transition: all 0.25s ease;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, #00ffe0, #00c2ff);
+  background-size: 200% 200%;
+  animation: pulse 2s ease infinite;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes pulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 2;
+  position: relative;
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 0.2rem 0.4rem;
+  transition: background 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .menu a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .wrapper {
+    padding: 0 1rem;
+  }
+}
