@@ -1,0 +1,102 @@
+/*Allyvia Holland Final Exam 07-22-25 */
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to right, #ffe6f0, #e0c3fc);
+  color: #5c004f;
+  margin: 0;
+  padding: 1em;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 2em auto;
+  background: #fff0f5;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.5);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-family: 'Cookie', cursive;
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: #ff69b4;
+  text-shadow: 1px 1px 2px #ffb6c1;
+}
+
+/* Input */
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+input[type="number"] {
+  padding: 0.7em;
+  border: 2px solid #ffb6c1;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.1em;
+  background-color: #fff8fb;
+}
+
+/* Button */
+button {
+  margin-top: 1em;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ffc0cb, #ffb6c1);
+}
+
+/* Results */
+.results p {
+  background-color: #fff;
+  border-left: 5px solid #ff69b4;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em 0;
+  white-space: pre-wrap;
+  font-size: 1em;
+  color: #800040;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.3em;
+  }
+
+  .container {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input[type="number"], button {
+    width: 100%;
+  }
+}
