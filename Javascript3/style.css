@@ -1,0 +1,106 @@
+/*Allyvia Holland Javacript 3 */ 
+/* Made .voiceinator responsive with max-width and % scaling */
+/* Styled form elements with consistent spacing and modern input styles */
+/* Styled the heading with text-shadow and custom font (Pacifico) */
+/* Grouped buttons in a .button-group with flex layout and spacing */
+/* Styled hover and active states for better feedback */
+/* Maintained original background pattern and color scheme */
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #3BC1AC;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  background-image:
+    radial-gradient(circle at 100% 150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, #3BC1AC 24%, #42D2BB 25%, #42D2BB 28%, #3BC1AC 29%, #3BC1AC 36%, #42D2BB 36%, #42D2BB 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, #42D2BB 10%, #3BC1AC 11%, #3BC1AC 23%, #42D2BB 24%, #42D2BB 30%, #3BC1AC 31%, #3BC1AC 43%, #42D2BB 44%, #42D2BB 50%, #3BC1AC 51%, #3BC1AC 63%, #42D2BB 64%, #42D2BB 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, #42D2BB 5%, #3BC1AC 6%, #3BC1AC 15%, #42D2BB 16%, #42D2BB 20%, #3BC1AC 21%, #3BC1AC 30%, #42D2BB 31%, #42D2BB 35%, #3BC1AC 36%, #3BC1AC 45%, #42D2BB 46%, #42D2BB 49%, transparent 50%, transparent);
+  background-size: 100px 50px;
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 90%;
+  max-width: 50rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: -2rem -2rem 2rem -2rem;
+  padding: 0.5rem;
+  background: #ffc600;
+  border-bottom: 5px solid #F3C010;
+  text-align: center;
+  font-size: 4.5rem;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 3px 3px 0 #F3C010;
+}
+
+.voiceinator label {
+  font-size: 1.6rem;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.voiceinator input,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 1.8rem;
+  border: none;
+  background: #F7F7F7;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  height: 15rem;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.button-group button {
+  flex: 1;
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  background: #ffc600;
+  border: none;
+  padding: 10px;
+  border-bottom: 5px solid #F3C010;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+  background: #f3c010;
+}
+
+.button-group button:active {
+  top: 2px;
+  position: relative;
+}
